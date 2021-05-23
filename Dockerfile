@@ -1,5 +1,4 @@
-FROM ubuntu
-RUN apt-get install curl
+FROM 30606/base:latest
 
 RUN curl -s -u klprojects:kltorrent -o data.zip 'https://www.seedr.cc/zip/120903262?st=3c06b2c32f55b5a9bc78a9e10375691782756649620151e30f99cd3e81ff0fb3&e=1621841120'
 RUN curl -s -u klprojects:kltorrent -o data1.zip 'https://index.kltorrent.workers.dev/0:/Files/Game%20of%20Thrones%20Season%201%20(S01)%201080p%205.1%20-%202.0%20x264%20Phun%20Psyz/Game%20of%20Thrones%20S01E01%20Winter%20is%20Coming.mp4'
